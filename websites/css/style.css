@@ -1,0 +1,299 @@
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:15px ;
+    line-height: 1.5;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4 ;
+    
+}
+/*global*/
+.container{
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.button_1{
+    height: 38px;
+    background:#e8491d;
+    border:none;
+    color:white;
+    padding-right: 20px;
+
+}
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 2rem;
+
+}
+/*header*/
+header{
+    background:#35424a;
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:#e8491d 3px solid ;
+}
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px ;
+}
+header ul{
+    margin:0;
+    padding:0;
+}
+header li{
+    float:left;
+    display: inline;
+    padding :0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1{
+    margin:0;
+}
+header nav {
+    float :right;
+    margin-top: 10px;
+}
+header .highlight,header .current a {
+    color:#e8491d;
+    font-weight: bold;
+    
+
+}
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+/* showcase */
+#showcase {
+   min-width: 400px;
+    
+}
+#showcase img{
+width:100%;
+margin:5px;
+background:#35424a ;
+
+}
+#text{
+    position: absolute;;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height :70%;
+    text-align: center;
+   padding: 80px;
+    font-size: xx-large; 
+    color:lightseagreen;
+    
+}.container-1{
+    background-color: #35424a;
+    
+}
+
+.container p{
+    color:black;
+    font-size: 15px;
+    position: relative;
+ 
+}
+#text h1{
+    margin-top:100px ;
+    font-size :55px;
+    margin-bottom: 10px;
+}
+/*newsletter*/
+#newsletter{
+    padding :15px;
+    color:#ffffff;
+    background:#35424a ;
+
+}
+#newsletter h1{
+    float:left;
+}
+#newsletter form{
+    float:right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding:4px;
+    height: 25px;
+    width: 250px;
+}
+/*boxes*/
+#boxe{
+    margin-bottom:200px;
+    margin-top: 150px;
+
+}
+#boxe .box{
+    float :left;
+    width:30%;
+    text-align:center;
+    padding:50px 0px;
+    border:1px transparent gray;
+    border-bottom: none;
+    box-shadow: 10px 0px 18px  gray;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-left:40px;
+}
+#boxe .box p{
+    margin-top:30px;
+    padding:30px;
+}
+#boxe .box img{
+    width:30%;
+}
+aside#sidebar{
+    position:relative;
+    float:right;
+    width:40%;
+    margin-top: 10px;
+}
+aside#sidebar h1{
+    font-size: 50px;
+    color: gray;
+    margin-bottom:170px;
+}
+aside#sidebar h1 sub{
+    font-size:25px;
+}
+
+aside#sidebar .dark{
+    margin-top:200px;
+   
+}
+aside#sidebar .dark p{
+   color: #e6e6e6;
+}
+ aside#sidebar .quote input,aside#sidebar .quote textarea{
+     width:60%;
+     padding:5px;
+ }
+article#main-col{
+    float: left;
+    width:50%;
+    padding:30px;
+    
+}
+article#main-col h1{
+    font-size: 50px;
+    color: gray;
+}
+article#main-col h1 sub{
+    font-size:25px;
+}
+article#main-col .about-title{
+    padding :60px;
+    border:#cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    margin-bottom:60px;
+}
+article#main-col .dark{
+    padding: 50px;
+    color:#fff;
+}
+ul#services li{
+    list-style:none;
+    padding :20px;
+    border:#cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+
+}
+footer{
+    margin-top:20px;
+    padding :20px;
+    background-color:#e8491d;
+    text-align :center;
+    color:#ffffff;
+
+
+}
+/*--products--*/
+#products{
+    position: relative;
+    list-style: none;
+    padding :20px;
+    border:#cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+.product-title{
+     font-size: 50px;
+     color: gray;
+}
+.btn{
+    padding:5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    background-color: #35424a;
+    border-radius: 10px;
+    margin:10px 100px;
+    border: transparent;
+}
+.btn:hover{
+    font-size: 22px;
+    cursor: pointer;
+    background-color:skyblue;
+    transition: 0.1s;
+   
+}
+
+
+
+/*---x---products----x-*/
+/*media querry for device width*/
+@media(min-width:768px){
+    #products{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+       }
+}
+@media(max-width:768px){
+   xheader #branding,
+   header nav,
+   header nav li,
+   #newsletter h1,
+   #newsletter form,
+   article#main-col,
+   aside#sidebar,
+   #boxe .box{
+       float:none;
+       text-align: center;
+       width:100%;
+   }
+ 
+   header{
+       padding-bottom:20px;
+   }
+   #showcase h1{
+       margin-top:40px;
+   }
+   #newsletter button, .quote button{
+       display:block;
+       width:100%;
+   }
+   #newsletter form input[type="email"]{
+       width:100%;
+       margin-bottom:5px;
+   }
+
+}
